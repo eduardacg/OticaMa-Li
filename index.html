@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá Ismael e Equipe!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff7a18, #ffb347); /* Gradiente laranja */
+            position: relative;
+            overflow-x: hidden; /* Evita rolagem horizontal */
+            min-height: 100vh;  /* Garante que a tela ocupe ao menos 100% da altura */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 95%; /* Aumenta a largura dos GIFs para quase ocupar a tela toda */
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.2); /* Fundo semitransparente atrás das imagens */
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto; /* Mantém a proporção correta das imagens */
+            display: block; /* Remove o pequeno espaçamento de linha entre imagens */
+            border-radius: 5px;
+        }
+
+        /* Garante que o conteúdo ocupe pelo menos 100% da altura para permitir rolagem */
+        html, body {
+            height: 100%;
+        }
+
+        /* Estilos para dispositivos móveis */
+        @media (max-width: 600px) {
+            .container {
+                padding: 5px;
+            }
+
+            .container img {
+                max-width: 100%; /* As imagens agora podem ocupar 100% da largura da tela */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="gifs/1.gif" alt="GIF 1"> 
+        <img src="gifs/2.gif" alt="GIF 2">
+        <img src="gifs/3.gif" alt="GIF 3">
+        <img src="gifs/4.gif" alt="GIF 4">
+        <img src="gifs/5.gif" alt="GIF 5">
+        <img src="gifs/6.gif" alt="GIF 6">
+    </div>    
+</body>
+</html>
